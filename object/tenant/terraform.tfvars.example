@@ -1,0 +1,2 @@
+cluster_name         = "seaweedfs-cluster"
+kubernetes_namespace = "default"

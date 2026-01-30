@@ -1,0 +1,9 @@
+# Namespace Configuration
+kubernetes_namespace = "cnpg-system"
+
+# Image Configuration
+image_repository = "ghcr.io/cloudnative-pg/cloudnative-pg"
+image_tag        = "1.28.0"
+
+# Chart Configuration
+chart_version = "0.27.0"

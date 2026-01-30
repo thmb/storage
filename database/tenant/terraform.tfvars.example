@@ -1,0 +1,15 @@
+# Cluster Configuration
+cluster_name         = "postgres-cluster"
+kubernetes_namespace = "database"
+
+# Database Configuration
+database_name     = "app"
+database_owner    = "app"
+database_password = "changeme"
+
+# Storage Configuration
+storage_size  = "10Gi"
+storage_class = "local-path"
+
+# PostgreSQL Version
+postgres_version = 18
