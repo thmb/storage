@@ -1,8 +1,0 @@
-# Namespace Configuration
-kubernetes_namespace = "seaweedfs-operator"
-
-# Chart Configuration
-chart_version = "0.1.12"
-
-# Webhook Configuration (keep false initially due to cert issues)
-webhook_enabled = false

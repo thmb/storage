@@ -13,3 +13,20 @@ storage_class = "local-path"
 
 # PostgreSQL Version
 postgres_version = 18
+
+
+# Admin
+
+# Namespace Configuration
+kubernetes_namespace = "database"
+
+# Application Configuration
+image_tag = "latest"
+
+# Admin Credentials (REQUIRED)
+admin_email    = "admin@example.com"
+admin_password = "changeme"
+
+# Ingress Configuration
+ingress_host = "admin.localhost"
+
