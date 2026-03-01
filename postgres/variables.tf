@@ -1,30 +1,31 @@
 variable "cluster_name" {
   description = "Name of the PostgreSQL cluster."
+  default     = "postgres-cluster"
   type        = string
 }
 
 variable "kubernetes_namespace" {
   description = "Kubernetes namespace."
-  default     = "default"
+  default     = "database"
   type        = string
 }
 
 variable "database_name" {
   description = "Initial database name to create."
-  default     = "app"
+  default     = "application"
   type        = string
 }
 
 variable "database_owner" {
   description = "Database owner username."
-  default     = "app"
+  sensitive   = true
   type        = string
 }
 
 variable "database_password" {
   description = "Database owner password."
-  type        = string
   sensitive   = true
+  type        = string
 }
 
 variable "storage_size" {
@@ -61,14 +62,14 @@ variable "image_tag" {
 
 variable "admin_email" {
   description = "PgAdmin login email address."
-  type        = string
   sensitive   = true
+  type        = string
 }
 
 variable "admin_password" {
   description = "PgAdmin login password."
-  type        = string
   sensitive   = true
+  type        = string
 }
 
 variable "ingress_host" {
